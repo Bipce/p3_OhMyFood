@@ -1,16 +1,69 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css"/>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>OhMyFood</title>
 </head>
+
 <body>
-<header>
-    <h1>test</h1>
+<header class="header">
+  <h1 class="header__title flex-center">
+    <img src="images/logo/ohmyfood.png" alt="Logo OhMyFood" class="header__title__logo" /></h1>
+
+  <div class="header__location">
+    <i class="fa-solid fa-location-dot"></i>
+    <label for="location"></label>
+    <input type="text" id="location" class="header__location__input" />
+  </div>
 </header>
+
+<main>
+  <div class="description">
+    <h2 class="description__title second-title">Réservez le menu qui vous convient</h2>
+    <p class="description__text tertiary-title">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+    <button class="description__btn btn">Explorer nos restaurants</button>
+  </div>
+
+  <section class="main-container menu">
+    <h2 class="second-title section-title">Fonctionnement</h2>
+    <ul>
+      <li class="menu__element"><span class="menu__element__number">1</span>
+        <i class="fa-solid fa-mobile-screen-button menu__element__icon"></i>
+        <span class="menu__element__text">Choisissez un restaurant</span>
+      </li>
+      <li class="menu__element"><span class="menu__element__number">2</span>
+        <i class="fa-solid fa-list-ul menu__element__icon"></i>
+        <span class="menu__element__text">Composez votre menu</span>
+
+      </li>
+      <li class="menu__element"><span class="menu__element__number">3</span>
+        <i class="fa-solid fa-store menu__element__icon"></i>
+        <span class="menu__element__text">Dégustez au restaurant</span>
+
+      </li>
+    </ul>
+  </section>
+
+  <section class="restaurants">
+    <h2 class="second-title section-title">Restaurants</h2>
+  </section>
+</main>
+
+<footer class="footer">
+  <h2 class="footer__title title_shrikhand tertiary-title">ohmyfood</h2>
+  <ul class="footer__menu">
+    <li><a><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a></li>
+    <li><a><i class="fa-solid fa-handshake-angle footer__icon footer__icon--size"></i>Devenir partenaire</a></li>
+    <li><a>Mentions légales</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+</footer>
 </body>
 </html>

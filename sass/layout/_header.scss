@@ -1,0 +1,26 @@
+.header {
+  flex-direction: column;
+
+  &__title {
+    height: 63px;
+    text-align: center;
+    box-shadow: 0 2px 4px 3px #00000026;
+    margin-bottom: 3px;
+
+    &__logo {
+      width: 162px;
+    }
+  }
+
+  &__location {
+    background-color: #EAEAEA;
+    text-align: center;
+
+    &__input {
+      background-color: #EAEAEA;
+      padding: 15px 0;
+      text-align: center;
+      width: 35%;
+    }
+  }
+}

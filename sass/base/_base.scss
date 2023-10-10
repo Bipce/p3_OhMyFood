@@ -1,0 +1,51 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.10);
+    box-shadow: 0 4px 10px 0 #00000040;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  padding-inline: 17.5px;
+}
+
+.section-title {
+  margin: 30px 0;
+}

@@ -1,0 +1,24 @@
+.footer {
+  background-color: $bg-tertiary;
+  color: #fff;
+  padding: 22px 25px;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    font-size: 13px;
+
+    &--size {
+      width: 11px;
+    }
+  }
+}
