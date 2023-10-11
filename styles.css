@@ -27,6 +27,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 ul {
@@ -36,6 +37,10 @@ ul {
 input {
   outline: none;
   border: none;
+}
+
+img {
+  object-fit: cover;
 }
 
 .btn {
@@ -169,6 +174,47 @@ input {
 
 .restaurants {
   background-color: #F6F6F6;
+  padding: 30px 17.5px;
+}
+.restaurants__article {
+  margin: 18px auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  position: relative;
+}
+.restaurants__article__new {
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  padding: 6px 10px;
+  width: 80px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.restaurants__article__image {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__article__content {
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 12px;
+  position: relative;
+}
+.restaurants__article__content__text {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.restaurants__article__content__heart {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,6 +10,7 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 ul {
@@ -19,6 +20,10 @@ ul {
 input {
   outline: none;
   border: none;
+}
+
+img {
+  object-fit: cover;
 }
 
 .btn {
