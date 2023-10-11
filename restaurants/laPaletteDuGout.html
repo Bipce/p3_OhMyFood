@@ -2,25 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../styles.css" />
-  <title>OhMyFood</title>
+  <title>La Palette du Goût</title>
 </head>
 
 <body>
-<header class="header flex-center">
-  <i class="fa-solid fa-arrow-left header__arrow-icon"></i>
-  <h1 class="header__title"><img src="images/logo/ohmyfood.png" alt="Logo OhMyFood" class="header__title__logo" /></h1>
+<header class="header">
+  <h1 class="header__title flex-center">
+    <a href="../index.html"><i class="fa-solid fa-arrow-left header__arrow-icon header__title__home-icon"></i></a>
+    <img src="../images/logo/ohmyfood.png" alt="Logo OhMyFood"
+         class="header__title__logo" />
+  </h1>
 </header>
 
-<main>
+<div>
+  <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+       alt="Photo montrant un plat du restaurant La palette du goût"
+       class="restaurant-img" />
+</div>
 
+<main>
+  <section class="restaurant">
+    <div class="restaurant__title">
+      <h2 class="title_shrikhand restaurant__title__text">La palette du goût</h2>
+      <i class="fa-regular fa-heart restaurant__title__icon"></i>
+    </div>
+
+    <div class="container restaurant__dish-box">
+      <p class="restaurant__dish-box__title">ENTRÉES</p>
+      <div class="restaurant__dish-box__line"></div>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__article__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Fricassée d'escargots</h3>
+          <p class="restaurant__dish-box__article__description__text small-text">Au piment d'Espelette</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">25€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Foie gras de canard mi-cuit</h3>
+          <p class="restaurant__dish-box__content__description__text small-text">Et ses copeaux de truffe noire</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">35€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Œuf au plat</h3>
+          <p class="restaurant__dish-box__content__description__text small-text">Assaisonné à la truffe sur lit de
+            caviar</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">20€</p>
+      </article>
+    </div>
+
+
+    <div class="container restaurant__dish-box">
+      <p class="restaurant__dish-box__title">PLATS</p>
+      <div class="restaurant__dish-box__line"></div>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__article__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Filet de bœuf aux herbes</h3>
+          <p class="restaurant__dish-box__article__description__text small-text">Accompagné de sa ribambelle de
+            légumes</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">40€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Parmentier de queue de bœuf</h3>
+          <p class="restaurant__dish-box__content__description__text small-text">À la truffe noire sur sa purée de
+            panais</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">35€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Filet de turbot</h3>
+          <p class="restaurant__dish-box__content__description__text small-text">Aux agrumes</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">44€</p>
+      </article>
+    </div>
+
+    <div class="container restaurant__dish-box">
+      <p class="restaurant__dish-box__title">DESSERTS</p>
+      <div class="restaurant__dish-box__line"></div>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__article__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Paris-Brest</h3>
+          <p class="restaurant__dish-box__article__description__text small-text">Revisitée</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">40€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Macaron au chocolat
+            d'exception </h3>
+          <p class="restaurant__dish-box__article__description__text small-text">Et glace à la vanille de Madagascar</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">22€</p>
+      </article>
+
+      <article class="restaurant__dish-box__article">
+        <div class="restaurant__dish-box__content__description">
+          <h3 class="tertiary-title restaurant__dish-box__article__description__name">Mousse au chocolat </h3>
+          <p class="restaurant__dish-box__content__description__text small-text">Au piment d'Espelette et à la truffe
+            noire</p>
+        </div>
+        <p class="restaurant__dish-box__article__price small-text">23€</p>
+      </article>
+    </div>
+
+    <button class="btn restaurant__btn">Commander</button>
+  </section>
 </main>
+
 
 <footer class="footer">
   <h2 class="footer__title title_shrikhand tertiary-title">ohmyfood</h2>
