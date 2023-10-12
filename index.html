@@ -34,16 +34,16 @@
   <section class="main-container menu">
     <h2 class="second-title section-title">Fonctionnement</h2>
     <nav>
-      <ul>
-        <li class="menu__element"><span class="menu__element__number">1</span>
+      <ul class="menu__list">
+        <li class="menu__list__element"><span class="menu__list__element__number">1</span>
           <i class="fa-solid fa-mobile-screen-button menu__element__icon"></i>
           <span class="menu__element__text">Choisissez un restaurant</span>
         </li>
-        <li class="menu__element"><span class="menu__element__number">2</span>
+        <li class="menu__list__element"><span class="menu__list__element__number">2</span>
           <i class="fa-solid fa-list-ul menu__element__icon"></i>
           <span class="menu__element__text">Composez votre menu</span>
         </li>
-        <li class="menu__element"><span class="menu__element__number">3</span>
+        <li class="menu__list__element"><span class="menu__list__element__number">3</span>
           <i class="fa-solid fa-store menu__element__icon"></i>
           <span class="menu__element__text">Dégustez au restaurant</span>
         </li>
@@ -51,56 +51,59 @@
     </nav>
   </section>
 
-  <section class="restaurants">
-    <h2 class="second-title">Restaurants</h2>
-    <div>
-      <a href="restaurants/laPaletteDuGout.html">
-        <article class="restaurants__article">
-          <div class="restaurants__article__new">Nouveau</div>
+  <section class="restaurants__section">
+    <h2 class="second-title restaurants__section__title">Restaurants</h2>
+    <div class="restaurants__section__box">
+      <a href="restaurants/laPaletteDuGout.html" class="restaurants__section__box__link">
+        <article class="restaurants__section__box__article">
+          <div class="restaurants__section__box__article__new">Nouveau</div>
           <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                alt="Photo montrant un plat du restaurant La palette du goût"
-               class="restaurants__article__image" />
-          <div class="restaurants__article__content">
+               class="restaurants__section__box__article__image" />
+          <div class="restaurants__section__box__article__content">
             <h3 class="tertiary-title">La palette du goût</h3>
-            <p class="restaurants__article__content__text">Ménilmontant</p>
-            <i class="fa-regular fa-heart restaurants__article__content__heart"></i>
+            <p class="restaurants__section__box__article__content__text">Ménilmontant</p>
+            <i class="fa-regular fa-heart restaurants__section__box__article__content__heart"></i>
           </div>
         </article>
       </a>
-      <a href="restaurants/laNoteEnchantee.html">
-        <article class="restaurants__article">
-          <div class="restaurants__article__new">Nouveau</div>
+
+      <a href="restaurants/laNoteEnchantee.html" class="restaurants__section__box__link">
+        <article class="restaurants__section__box__article">
+          <div class="restaurants__section__box__article__new">Nouveau</div>
           <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                alt="Photo montrant un plat du restaurant La palette du goût"
-               class="restaurants__article__image" />
-          <div class="restaurants__article__content">
+               class="restaurants__section__box__article__image" />
+          <div class="restaurants__section__box__article__content">
             <h3 class="tertiary-title">La note enchantée</h3>
-            <p class="restaurants__article__content__text">Charonne</p>
-            <i class="fa-regular fa-heart restaurants__article__content__heart"></i>
+            <p class="restaurants__section__box__article__content__text">Charonne</p>
+            <i class="fa-regular fa-heart restaurants__section__box__article__content__heart"></i>
           </div>
         </article>
       </a>
-      <a href="restaurants/aLaFrancaise.html">
-        <article class="restaurants__article">
+
+      <a href="restaurants/aLaFrancaise.html" class="restaurants__section__box__link">
+        <article class="restaurants__section__box__article">
           <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                alt="Photo montrant un plat du restaurant La palette du goût"
-               class="restaurants__article__image" />
-          <div class="restaurants__article__content">
+               class="restaurants__section__box__article__image" />
+          <div class="restaurants__section__box__article__content">
             <h3 class="tertiary-title">À la française</h3>
-            <p class="restaurants__article__content__text">Cité rouge</p>
-            <i class="fa-regular fa-heart restaurants__article__content__heart"></i>
+            <p class="restaurants__section__box__article__content__text">Cité rouge</p>
+            <i class="fa-regular fa-heart restaurants__section__box__article__content__heart"></i>
           </div>
         </article>
       </a>
-      <a href="restaurants/leDeliceDuSens.html">
-        <article class="restaurants__article">
+
+      <a href="restaurants/leDeliceDuSens.html" class="restaurants__section__box__link">
+        <article class="restaurants__section__box__article">
           <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                alt="Photo montrant un plat du restaurant La palette du goût"
-               class="restaurants__article__image" />
-          <div class="restaurants__article__content">
+               class="restaurants__section__box__article__image" />
+          <div class="restaurants__section__box__article__content">
             <h3 class="tertiary-title">Le délice des sens</h3>
-            <p class="restaurants__article__content__text">Folie-Méricourt</p>
-            <i class="fa-regular fa-heart restaurants__article__content__heart"></i>
+            <p class="restaurants__section__box__article__content__text">Folie-Méricourt</p>
+            <i class="fa-regular fa-heart restaurants__section__box__article__content__heart"></i>
           </div>
         </article>
       </a>
@@ -111,8 +114,10 @@
 <footer class="footer">
   <h2 class="footer__title title_shrikhand tertiary-title">ohmyfood</h2>
   <ul class="footer__menu">
-    <li><a><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a></li>
-    <li><a><i class="fa-solid fa-handshake-angle footer__icon footer__icon--size"></i>Devenir partenaire</a></li>
+    <li><a><i class="fa-solid fa-utensils footer__menu__icon"></i>Proposer un restaurant</a></li>
+    <li class="footer__menu__element--margin"><a>
+      <i class="fa-solid fa-handshake-angle footer__menu__icon footer__menu__icon--size"></i>
+      Devenir partenaire</a></li>
     <li><a>Mentions légales</a></li>
     <li><a>Contact</a></li>
   </ul>

@@ -21,9 +21,9 @@
 
 //Menu
 .menu {
-  margin-bottom: 60px;
+  margin: 40px auto;
 
-  &__element {
+  &__list__element {
     background-color: $bg-secondary;
     font-weight: 500;
     padding: 26px 22px;
@@ -37,6 +37,7 @@
     margin-bottom: 15px;
     margin-inline: auto;
     width: 90%;
+    cursor: pointer;
 
     &:hover {
       .menu__element__icon {
@@ -72,11 +73,11 @@
 }
 
 // Restaurants
-.restaurants {
+.restaurants__section {
   background-color: $bg-secondary;
   padding: 30px 17.5px;
 
-  &__article {
+  &__box__article {
     margin: 18px auto;
     display: flex;
     flex-direction: column;

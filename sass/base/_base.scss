@@ -58,3 +58,13 @@ img {
 .section-title {
   margin: 30px 0;
 }
+
+@include large {
+  body {
+    margin-inline: auto;
+  }
+
+  .main-container {
+    padding-inline: 20px;
+  }
+}

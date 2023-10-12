@@ -24,6 +24,13 @@
       padding: 15px 0;
       text-align: center;
       width: 35%;
+      font-weight: 500;
     }
+  }
+}
+
+@include large {
+  .header__location__input {
+    width: 10%;
   }
 }

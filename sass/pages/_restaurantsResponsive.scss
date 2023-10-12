@@ -1,0 +1,20 @@
+@include large {
+  .restaurant-img {
+    height: 600px;
+  }
+
+  .restaurant {
+    width: 73%;
+    margin-inline: auto;
+
+    &__title {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &__dish-box {
+      width: 60%;
+      margin-inline: auto;
+    }
+  }
+}

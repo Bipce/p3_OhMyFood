@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import "sass/utilities/variables";
+@import "sass/utilities/mixins";
 
 @import "sass/base/typography";
 @import "sass/base/base";
@@ -10,3 +11,5 @@
 
 @import "sass/pages/home";
 @import "sass/pages/restaurants";
+@import "sass/pages/homeResponsive";
+@import "sass/pages/restaurantsResponsive";

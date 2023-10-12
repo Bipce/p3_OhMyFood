@@ -11,14 +11,32 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
+
+    &__icon {
+      margin-right: 10px;
+      font-size: 13px;
+
+      &--size {
+        width: 11px;
+      }
+    }
   }
+}
 
-  &__icon {
-    margin-right: 10px;
-    font-size: 13px;
+@include large {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
 
-    &--size {
-      width: 11px;
+    &__menu {
+      flex-direction: row;
+      gap: 20px;
+
+      &__element--margin {
+        margin-right: 45px;
+      }
+
     }
   }
 }

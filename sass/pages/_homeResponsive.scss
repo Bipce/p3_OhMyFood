@@ -1,0 +1,52 @@
+@include large {
+  %max-width {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .description__title {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  //  Menu
+  .menu {
+    @extend %max-width;
+
+    &__list {
+      display: flex;
+      gap: 25px;
+
+      &__element {
+        flex-direction: row;
+      }
+    }
+  }
+  // Restaurants
+  .restaurants__section {
+    margin-inline: auto;
+    justify-content: center;
+
+    &__title {
+      @extend %max-width;
+      margin-bottom: 25px;
+    }
+
+    &__box {
+      @extend %max-width;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+
+      &__link {
+        width: 48%;
+      }
+
+      &__article {
+        margin: 0;
+      }
+    }
+  }
+}
