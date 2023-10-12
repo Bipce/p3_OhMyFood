@@ -38,6 +38,13 @@
     margin-inline: auto;
     width: 90%;
 
+    &:hover {
+      .menu__element__icon {
+        color: $primary-color;
+      }
+    }
+
+
     &__number {
       background-color: $primary-color;
       color: #fff;
