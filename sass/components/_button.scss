@@ -1,0 +1,15 @@
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  background: $bg-gradient;
+  box-shadow: 0 4px 10px 0 rgba(37, 37, 37, 0.25);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.10);
+    box-shadow: 0 4px 10px 2px #00000040;
+  }
+}

@@ -44,24 +44,49 @@
       justify-content: space-between;
       align-items: flex-end;
       background-color: #fff;
-      padding: 15px;
       border-radius: 15px;
       box-shadow: 0 4.011494159698486px 15.043103218078613px 0 #0000001A;
       margin-bottom: 10px;
+      cursor: pointer;
 
       &__description {
+        padding: 15px;
+        overflow: hidden;
+
         &__text {
           margin-top: 5px;
           font-weight: 300;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
         &__name {
           font-weight: 500;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
 
       &__price {
         font-weight: 700;
+        padding: 15px;
+      }
+
+      &__checkbox {
+        padding: 15px;
+        height: 75px;
+        width: 59px;
+        border-radius: 0 15px 15px 0;
+        color: #fff;
+        background-color: $tertiary-color;
+        display: none;
+
+        &__icon {
+          font-size: 1.3rem;
+          display: none;
+        }
       }
     }
   }

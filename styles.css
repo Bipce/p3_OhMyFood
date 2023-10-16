@@ -28,6 +28,10 @@ body {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -45,20 +49,6 @@ input {
 
 img {
   object-fit: cover;
-}
-
-.btn {
-  border: none;
-  border-radius: 25px;
-  padding: 12px 20px;
-  color: #fff;
-  font-weight: 500;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  cursor: pointer;
-}
-.btn:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
 
 .flex-center {
@@ -85,6 +75,145 @@ img {
   }
   .main-container {
     padding-inline: 20px;
+  }
+}
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(37, 37, 37, 0.25);
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2509803922);
+}
+
+.heart:active {
+  background-clip: text;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+@keyframes translate-dish {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes checkbox {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes iconColor {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
+  }
+}
+.animation-dish {
+  animation: translate-dish 0.8s linear;
+}
+
+.restaurant__dish-box__article:hover .restaurant__dish-box__article__checkbox {
+  animation: checkbox 0.5s ease-in-out;
+  display: flex;
+}
+.restaurant__dish-box__article:hover .restaurant__dish-box__article__checkbox__icon {
+  animation: iconColor 1s;
+  display: block;
+}
+
+@keyframes spinner-pop {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.lds-ripple {
+  animation: spinner-pop 2s;
+  position: fixed;
+  top: 50%;
+  right: 55%;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #9356DC;
+  opacity: 0;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) 2;
+}
+.lds-ripple div:nth-child(2) {
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) 2;
+  animation-delay: -0.5s;
+}
+
+@keyframes pop-wait {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  position: relative;
+}
+
+.page-container {
+  animation: pop-wait 2s 0s;
+}
+
+@media (min-width: 1025px) {
+  .lds-ripple {
+    right: 50%;
   }
 }
 .header__title {
@@ -298,20 +427,44 @@ img {
   justify-content: space-between;
   align-items: flex-end;
   background-color: #fff;
-  padding: 15px;
   border-radius: 15px;
   box-shadow: 0 4.0114941597px 15.0431032181px 0 rgba(0, 0, 0, 0.1019607843);
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.restaurant__dish-box__article__description {
+  padding: 15px;
+  overflow: hidden;
 }
 .restaurant__dish-box__article__description__text {
   margin-top: 5px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurant__dish-box__article__description__name {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurant__dish-box__article__price {
   font-weight: 700;
+  padding: 15px;
+}
+.restaurant__dish-box__article__checkbox {
+  padding: 15px;
+  height: 75px;
+  width: 59px;
+  border-radius: 0 15px 15px 0;
+  color: #fff;
+  background-color: #99E2D0;
+  display: none;
+}
+.restaurant__dish-box__article__checkbox__icon {
+  font-size: 1.3rem;
+  display: none;
 }
 .restaurant__btn {
   width: 186px;
@@ -371,6 +524,15 @@ img {
   .restaurant__dish-box {
     width: 60%;
     margin-inline: auto;
+  }
+  .restaurant__dish-box__article {
+    justify-content: normal;
+  }
+  .restaurant__dish-box__article__description {
+    padding-right: 300px;
+  }
+  .restaurant__dish-box__article__description__text, .restaurant__dish-box__article__description__name {
+    overflow: visible;
   }
 }
 

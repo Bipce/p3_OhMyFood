@@ -1,0 +1,8 @@
+.heart:active {
+  background-clip: text;
+  background: $bg-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: .2s;
+}

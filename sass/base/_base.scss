@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -24,21 +28,6 @@ input {
 
 img {
   object-fit: cover;
-}
-
-.btn {
-  border: none;
-  border-radius: 25px;
-  padding: 12px 20px;
-  color: #fff;
-  font-weight: 500;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(1.10);
-    box-shadow: 0 4px 10px 0 #00000040;
-  }
 }
 
 .flex-center {
