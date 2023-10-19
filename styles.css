@@ -111,15 +111,6 @@ img {
     opacity: 1;
   }
 }
-@keyframes checkbox {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes iconColor {
   0% {
     color: transparent;
@@ -133,9 +124,9 @@ img {
 }
 
 .restaurant__dish-box__article:hover .restaurant__dish-box__article__checkbox {
-  animation: checkbox 0.5s ease-in-out;
-  display: flex;
+  margin-right: 0;
 }
+
 .restaurant__dish-box__article:hover .restaurant__dish-box__article__checkbox__icon {
   animation: iconColor 1s;
   display: block;
@@ -424,17 +415,18 @@ body {
 }
 .restaurant__dish-box__article {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4.0114941597px 15.0431032181px 0 rgba(0, 0, 0, 0.1019607843);
   margin-bottom: 10px;
   cursor: pointer;
+  overflow: hidden;
 }
 .restaurant__dish-box__article__description {
   padding: 15px;
   overflow: hidden;
+  width: 95%;
 }
 .restaurant__dish-box__article__description__text {
   margin-top: 5px;
@@ -454,13 +446,13 @@ body {
   padding: 15px;
 }
 .restaurant__dish-box__article__checkbox {
-  padding: 15px;
   height: 75px;
   width: 59px;
   border-radius: 0 15px 15px 0;
   color: #fff;
   background-color: #99E2D0;
-  display: none;
+  margin-right: -59px;
+  transition: all 0.5s;
 }
 .restaurant__dish-box__article__checkbox__icon {
   font-size: 1.3rem;

@@ -41,17 +41,18 @@
 
     &__article {
       display: flex;
-      justify-content: space-between;
       align-items: flex-end;
       background-color: #fff;
       border-radius: 15px;
       box-shadow: 0 4.011494159698486px 15.043103218078613px 0 #0000001A;
       margin-bottom: 10px;
       cursor: pointer;
+      overflow: hidden;
 
       &__description {
         padding: 15px;
         overflow: hidden;
+        width: 95%;
 
         &__text {
           margin-top: 5px;
@@ -75,13 +76,14 @@
       }
 
       &__checkbox {
-        padding: 15px;
+        //padding: 15px;
         height: 75px;
         width: 59px;
         border-radius: 0 15px 15px 0;
         color: #fff;
         background-color: $tertiary-color;
-        display: none;
+        margin-right: -59px;
+        transition: all 0.5s;
 
         &__icon {
           font-size: 1.3rem;

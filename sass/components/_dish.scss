@@ -10,16 +10,6 @@
   }
 }
 
-@keyframes checkbox {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes iconColor {
   0% {
     color: transparent;
@@ -34,15 +24,16 @@
   animation: translate-dish .8s linear;
 }
 
+.restaurant__dish-box__article:hover .restaurant__dish-box__article__checkbox {
+  margin-right: 0;
+}
 
 .restaurant__dish-box__article:hover {
-  .restaurant__dish-box__article__checkbox {
-    animation: checkbox .5s ease-in-out;
-    display: flex;
-  }
-
   .restaurant__dish-box__article__checkbox__icon {
     animation: iconColor 1s;
     display: block;
   }
 }
+
+
+
